@@ -1,0 +1,297 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8fafb; 
+}
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  
+a:hover {
+  text-decoration: none !important; 
+}
+
+.content {
+  padding: 7rem 0; }
+
+h2 {
+  font-size: 20px; 
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  position: sticky;
+}
+    
+/* Style for the header links */
+.header a {      
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin: 15px 2px;
+}
+  
+    /* display size for logo image */
+    .header img.logo{
+      float: left;
+      height: 30px;
+      width: 60px;
+      place-content: center;
+    }
+  
+  /* Style for logo link */
+    .header a.name {
+      font-size: 25px;
+      font-weight: bold;
+      margin-left: 2vh;
+      font-family: sans-serif;
+    }
+  
+  
+    /* change color and bg color when mouse-over */
+    .header-right a:hover {
+      background-color: #63eec0;
+      color: black;
+      transition: 0.6s ease;
+    }
+    /* Style the active/current link*/
+    .header a.active {
+      background-color: #29bb8a;
+      color: white;
+    }
+    
+    /* Float the link section to the right */
+    .header-right {
+      float: right;
+}
+
+/* media queries - when the screen is approx 1000px*/
+@media (max-width: 991.98px) {
+  .content .bg {
+    height: 500px; } }
+
+.content .contents, .content .bg {
+  width: 50%; 
+}
+
+/* media queries - when the screen is approx 1200px*/
+@media (max-width: 1199.98px) {
+    .content .contents, .content .bg {
+      width: 100%; 
+    } 
+}
+.content .contents .form-group, .content .bg .form-group {
+    position: relative; 
+}
+
+
+.content .contents .form-group input, .content .bg .form-group input {
+  background: transparent;
+  border-bottom: 1px solid #ccc; 
+}
+
+.content .contents .form-group.first, .content .bg .form-group.first {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px; 
+}
+    
+.content .contents .form-group.last, .content .bg .form-group.last {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; 
+}
+    
+.content .contents .form-group.focus, .content .bg .form-group.focus {
+  background: #fff; 
+}
+    
+.content .contents .form-control, .content .bg .form-control {
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 0; 
+}
+
+.content .contents .form-control:active, .content .contents .form-control:focus, .content .bg .form-control:active, .content .bg .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; 
+}
+
+.content .bg {
+  background-size: cover;
+  background-position: center; 
+}
+
+
+/* Style for submit button */
+div .btn{
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px; 
+  color: #fff;
+  background: #29bb8a;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px; }
+  .control .caption {
+    position: relative;
+    top: .2rem;
+    color: #888; }
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 4px; }
+
+/* header section */
+
+  
+  /* media queries when the screen is 500px */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  /* jumbotron to populate the output block on the same webpage */
+  .jumbotron{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+    color: #7b7b7b;
+    border-radius: 10px;
+  }
+
+  /* A fixed footer to be displayed */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    opacity: 0.95;
+    padding-top: 10px;
+  }
+
+/* Card to display available colleges. */
+.card{
+    display: inline-block;
+    font-family: arial;
+    margin: auto;
+    background-color: #e9ecef;
+    margin-left: 10px;
+    border: none;
+}
+  
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2f2e41;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-back-text {
+    margin-top: 20%;
+  }
+
+
+  /* Style for the button displayed on the card */
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: #6c63ff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 15%;
+    width: 50%;
+  }
+  
+  .card button:hover{
+    color:#fff;
+    background-color: #29bb8a;
+    transition: 0.6s ease;
+  }
+
+/* Style for the image when no colleges are available */
+  #output_display img {
+  width: 75%;
+  height: auto;
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  }

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>College Explorer</title>
+  </head>
+  
+<body>
+
+  <!--Header Section  -->
+  <div class="header">
+    <img src="images/logo.png" class="rounded float-start" width="30px" height="30px" alt="college_logo">
+    <a href="#" class="name"><i class="fa-duotone fa-rocket">College Explorer &#128640;</i></a>
+    <div class="header-right">
+      <a class="active" href="#home"><i class="icon-home"> </i> Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div> 
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+          <img src="images/undraw_file_sync_ot38.svg" alt="Image" class="img-fluid">
+        </div>
+      <div class="col-md-6 contents">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="mb-4">
+            <h3><strong>Enter Details</strong> </h3>
+          </div>
+
+        <!-- Form to provide the inputs -->
+        <form class="collegeForm">
+          
+          <!-- For Selecting the College Name -->
+          <div class="form-group">
+            <label class="required">College Name</label>
+            <select class="form-control" id="college-name" required>
+                <option value="" selected disabled>--select--</option>
+            </select>
+          </div>
+
+          <!-- For selecting the Caste -->
+          <div class="form-group">
+            <label class="required">Caste</label>
+            <select class="form-control" id="caste-name">
+              <option value="" selected disabled>--select--</option>
+            </select>
+          </div>
+
+          <!-- For entering Yearly income -->
+          <div class="form-group">
+            <label class="required">Family Yearly Income</label>
+            <input type="number" class="form-control" id="annualIncome" required="true">
+            <div class="requirements"></div>
+          </div>
+
+          <!-- For entering marks -->
+          <div class="form-group">
+            <label class="required">12th Marks in Percentage</label>
+            <input type="number" min="0" max="100" class="form-control" id="percentage" required="true">
+            <div class="requirements"></div>
+          </div>
+          
+          <!-- submit Button -->
+          <div class="submit">
+              <button type="button" id="submitButton" onclick="findCollege()" disabled class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+      </div>      
+    </div>   
+  </div>
+  
+  <!-- The available colleges will appear here -->
+  <div class="jumbotron">
+    <h1 class="display-4"> Colleges available are:</h1>  
+    <hr class="my-4">
+      <div class="outputclass" id="res_block"> 
+        <div class="college_card_class" id="output_page">
+          <h2>The avilable colleges will appear here</h2>          
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- Footer section -->
+<div class="footer">
+  <p><strong style="color: #000;">&copy;2022 All Rights Reserved.</strong></p>
+</div>
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/local.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
